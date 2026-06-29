@@ -16,7 +16,7 @@
       "https://aiagentskills.net/category/code-generation/"
     ],
     "run_started_at": "2026-06-29T09:00:00Z",
-    "run_finished_at": "2026-06-29T12:12:40Z"
+    "run_finished_at": "2026-06-29T12:28:30Z"
   },
   "platforms": [
     {
@@ -293,29 +293,33 @@
     },
     {
       "platform": "jsr",
-      "status": "blocked_namespace",
+      "status": "verified",
       "artifact_type": "typescript_package",
       "automation_level": "automated",
       "package": "@bbwdadfg/aiagentskills-site-kit",
       "version": "0.1.0",
       "public_url": "https://jsr.io/@bbwdadfg/aiagentskills-site-kit",
       "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
-      "link_surfaces_verified": [],
+      "link_surfaces_verified": [
+        "README.md",
+        "package_page",
+        "repository"
+      ],
       "credential_status": "keychain_token_used",
-      "blocked_reason": "JSR requires package creation/approval at https://jsr.io/new?scope=bbwdadfg&package=aiagentskills-site-kit&from=cli",
+      "blocked_reason": "",
       "verification": {
-        "method": "jsr_dry_run",
-        "result": "JSR dry-run passed; live publish requires creating/approving the new package URL in JSR UI",
-        "checked_at": "2026-06-29T09:22:38Z"
+        "method": "jsr_public_pages",
+        "result": "JSR publish succeeded for @bbwdadfg/aiagentskills-site-kit@0.1.0; package and version pages returned HTTP 200 with expected AI Agent Skills links",
+        "checked_at": "2026-06-29T12:25:30Z"
       },
-      "cleanup": [],
-      "notes": [
-        "Do not retry token publish until package is created in JSR UI."
-      ]
+      "cleanup": [
+        "temporary token variable cleared"
+      ],
+      "notes": []
     },
     {
       "platform": "maven_central_javadoc",
-      "status": "published",
+      "status": "verified",
       "artifact_type": "java_library",
       "automation_level": "semi_auto_signed",
       "package": "io.github.bbwdadfg:aiagentskills-site-kit",
@@ -324,14 +328,16 @@
       "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
       "link_surfaces_verified": [
         "package_page",
-        "javadoc_page"
+        "repo1_pom",
+        "repository",
+        "javadoc"
       ],
       "credential_status": "keychain_token_used",
       "blocked_reason": "",
       "verification": {
-        "method": "central_publish_api_and_page",
-        "result": "Central deployment 3d13a48d-8a6c-4458-ae95-e4740035e412 validated and publish API returned HTTP 204; Central artifact page returned HTTP 200; repo1.maven.org artifacts still indexing",
-        "checked_at": "2026-06-29T12:12:40Z"
+        "method": "repo1_and_javadoc_verified",
+        "result": "Repo1 POM, JAR, sources JAR, javadoc JAR, signature, Central artifact page, and javadoc.io page returned HTTP 200; POM contains homepage and SCM links",
+        "checked_at": "2026-06-29T12:28:30Z"
       },
       "cleanup": [
         "temporary Maven settings deleted",
@@ -464,26 +470,31 @@
     },
     {
       "platform": "github_packages",
-      "status": "published",
+      "status": "verified",
       "artifact_type": "github_package",
       "automation_level": "automated",
       "package": "@bbwdadfg/aiagentskills-site-kit",
       "version": "0.1.0",
-      "public_url": "https://github.com/users/bbwdadfg/packages/npm/package/aiagentskills-site-kit",
+      "public_url": "https://github.com/bbwdadfg/aiagentskills-site-kit/pkgs/npm/aiagentskills-site-kit",
       "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
-      "link_surfaces_verified": [],
-      "credential_status": "keychain_token_used",
-      "blocked_reason": "Make package public in GitHub Packages UI or use a token/API path with package visibility permission",
+      "link_surfaces_verified": [
+        "package_page",
+        "repository",
+        "README.md"
+      ],
+      "credential_status": "keychain_token_used_and_chrome_session_used",
+      "blocked_reason": "",
       "verification": {
-        "method": "github_packages_api",
-        "result": "GitHub Packages API lists package 0.1.0 but visibility remains private; public page returns 404",
-        "checked_at": "2026-06-29T09:22:38Z"
+        "method": "github_packages_api_and_public_page",
+        "result": "GitHub Packages API reports visibility=public and unauthenticated package page returned HTTP 200 with expected links",
+        "checked_at": "2026-06-29T12:25:30Z"
       },
       "cleanup": [
-        "temporary npmrc deleted"
+        "temporary API response deleted",
+        "Chrome tab released"
       ],
       "notes": [
-        "NPM publish to GitHub Packages succeeded."
+        "Changed package visibility from private to public in GitHub package settings UI"
       ]
     },
     {
@@ -515,16 +526,6 @@
   ],
   "follow_up": [
     {
-      "platform": "jsr",
-      "reason": "create/approve @bbwdadfg/aiagentskills-site-kit in JSR UI, then rerun token publish",
-      "owner": "user/agent"
-    },
-    {
-      "platform": "github_packages",
-      "reason": "package published but private; make public in GitHub UI",
-      "owner": "user/agent"
-    },
-    {
       "platform": "cpan_metacpan",
       "reason": "replace PAUSE credentials after 401",
       "owner": "user"
@@ -543,11 +544,6 @@
       "platform": "rubygems",
       "reason": "add RubyGems API key to Keychain then publish",
       "owner": "user"
-    },
-    {
-      "platform": "maven_central_javadoc",
-      "reason": "repo1.maven.org artifacts are still indexing; recheck POM/JAR/sources/javadoc/asc URLs and then mark verified",
-      "owner": "agent"
     }
   ]
 }
