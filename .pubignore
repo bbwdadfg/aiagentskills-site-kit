@@ -53,3 +53,5 @@ lib/ai_agent_skills/
 lib/aiagentskills_site_kit.ex
 test/aiagentskills_site_kit_test.exs
 test/test_helper.exs
+
+mix.lock

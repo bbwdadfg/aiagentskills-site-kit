@@ -11,7 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AiAgentSkills\SiteKit\": "src/"
+      "AiAgentSkills\\SiteKit\\": "src/"
     }
   }
 }
