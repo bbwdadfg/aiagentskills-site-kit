@@ -429,26 +429,6 @@
       "notes": []
     },
     {
-      "platform": "hackage",
-      "status": "blocked_credentials",
-      "artifact_type": "haskell_package",
-      "automation_level": "automated",
-      "package": "aiagentskills-site-kit",
-      "version": "0.1.0",
-      "public_url": "https://hackage.haskell.org/package/aiagentskills-site-kit",
-      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
-      "link_surfaces_verified": [],
-      "credential_status": "missing_keychain_token",
-      "blocked_reason": "publish-package-backlinks/hackage-token missing",
-      "verification": {
-        "method": "credential_check",
-        "result": "Hackage token missing; no Cabal package generated",
-        "checked_at": "2026-06-29T09:22:38Z"
-      },
-      "cleanup": [],
-      "notes": []
-    },
-    {
       "platform": "chocolatey",
       "status": "submitted",
       "artifact_type": "windows_package",

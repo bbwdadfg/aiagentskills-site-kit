@@ -9,7 +9,7 @@
 
 | Status | Count |
 | --- | ---: |
-| blocked_credentials | 4 |
+| blocked_credentials | 3 |
 | blocked_namespace | 2 |
 | blocked_review | 1 |
 | published | 2 |
@@ -45,7 +45,6 @@
 | maven_central_javadoc | `blocked_namespace` | Maven Central artifact not generated/signed in this run |
 | cocoapods | `blocked_review` | Install full Xcode and set xcode-select before pod trunk push |
 | cpan_metacpan | `blocked_credentials` | Update publish-package-backlinks/cpan-user and cpan-token |
-| hackage | `blocked_credentials` | publish-package-backlinks/hackage-token missing |
 
 ## Credential Cleanup
 
