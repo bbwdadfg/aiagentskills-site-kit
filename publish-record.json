@@ -1,0 +1,564 @@
+{
+  "schema_version": "1.0",
+  "target": {
+    "site": "https://aiagentskills.net",
+    "brand": "AI Agent Skills",
+    "site_type": "ai_agent_skill_directory",
+    "slug_hyphen": "aiagentskills-site-kit",
+    "slug_underscore": "aiagentskills_site_kit",
+    "source_repo": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+    "useful_urls": [
+      "https://aiagentskills.net",
+      "https://aiagentskills.net/skills/",
+      "https://aiagentskills.net/submit/",
+      "https://aiagentskills.net/blog/",
+      "https://aiagentskills.net/category/agent-workflows/",
+      "https://aiagentskills.net/category/code-generation/"
+    ],
+    "run_started_at": "2026-06-29T09:00:00Z",
+    "run_finished_at": "2026-06-29T09:22:38Z"
+  },
+  "platforms": [
+    {
+      "platform": "github",
+      "status": "verified",
+      "artifact_type": "source_repository",
+      "automation_level": "automated",
+      "package": "bbwdadfg/aiagentskills-site-kit",
+      "version": "v0.1.0/v0.1.1",
+      "public_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "README.md",
+        "repository_homepage",
+        "release"
+      ],
+      "credential_status": "none",
+      "blocked_reason": "",
+      "verification": {
+        "method": "public_page",
+        "result": "repo and release page HTTP 200; homepage in repo metadata/README",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": []
+    },
+    {
+      "platform": "pkg_go_dev",
+      "status": "published",
+      "artifact_type": "go_module",
+      "automation_level": "automated",
+      "package": "github.com/bbwdadfg/aiagentskills-site-kit",
+      "version": "v0.1.0",
+      "public_url": "https://pkg.go.dev/github.com/bbwdadfg/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "go_proxy",
+        "source_link"
+      ],
+      "credential_status": "none",
+      "blocked_reason": "",
+      "verification": {
+        "method": "go_proxy_api",
+        "result": "Go proxy returned v0.1.0; pkg.go.dev page still 404/indexing pending",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Go proxy origin hash verified for v0.1.0."
+      ]
+    },
+    {
+      "platform": "packagist",
+      "status": "verified",
+      "artifact_type": "composer_package",
+      "automation_level": "automated",
+      "package": "bbwdadfg/aiagentskills-site-kit",
+      "version": "v0.1.1",
+      "public_url": "https://packagist.org/packages/bbwdadfg/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "composer_homepage",
+        "support_source",
+        "package_page"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "packagist_api",
+        "result": "Packagist accepted repo and p2 metadata lists v0.1.1",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "temporary API request files deleted"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "crates_io_docs_rs",
+      "status": "blocked_credentials",
+      "artifact_type": "rust_crate",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://crates.io/crates/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "missing_keychain_token",
+      "blocked_reason": "publish-package-backlinks/crates-token missing",
+      "verification": {
+        "method": "cargo_publish_dry_run",
+        "result": "cargo publish --dry-run passed; crates token missing",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Local cargo test and package verification passed."
+      ]
+    },
+    {
+      "platform": "rubygems",
+      "status": "blocked_credentials",
+      "artifact_type": "ruby_gem",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://rubygems.org/gems/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "missing_keychain_token",
+      "blocked_reason": "publish-package-backlinks/rubygems-api-key missing",
+      "verification": {
+        "method": "gem_build",
+        "result": "gem build passed; RubyGems API key missing",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": []
+    },
+    {
+      "platform": "npm",
+      "status": "verified",
+      "artifact_type": "javascript_package",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://www.npmjs.com/package/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "package_homepage",
+        "repository",
+        "README.md"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "npm_registry_json",
+        "result": "registry.npmjs.org latest=0.1.0 and homepage/repository present",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "temporary npmrc deleted"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "pypi",
+      "status": "verified",
+      "artifact_type": "python_package",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://pypi.org/project/aiagentskills-site-kit/",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "project_urls",
+        "README.md"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "pypi_json_api",
+        "result": "PyPI JSON API returned version 0.1.0 and project URLs",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "uv token environment cleared"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "pub_dev",
+      "status": "verified",
+      "artifact_type": "dart_package",
+      "automation_level": "automated",
+      "package": "aiagentskills_site_kit",
+      "version": "0.1.0",
+      "public_url": "https://pub.dev/packages/aiagentskills_site_kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "pubspec_homepage",
+        "repository",
+        "README.md"
+      ],
+      "credential_status": "dart_oauth_session_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "pub_api_and_page",
+        "result": "pub.dev API/page returned latest 0.1.0",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Version 0.1.0 included a small ignored mix.lock file; .pubignore was fixed for future versions."
+      ]
+    },
+    {
+      "platform": "hex_hexdocs",
+      "status": "verified",
+      "artifact_type": "elixir_package",
+      "automation_level": "automated",
+      "package": "aiagentskills_site_kit",
+      "version": "0.1.0",
+      "public_url": "https://hex.pm/packages/aiagentskills_site_kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "package_links",
+        "README.md",
+        "hexdocs"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "hex_api_and_hexdocs",
+        "result": "Hex API returned 0.1.0 and HexDocs page HTTP 200",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "HEX_API_KEY env cleared"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "clojars",
+      "status": "verified",
+      "artifact_type": "maven_artifact",
+      "automation_level": "automated",
+      "package": "net.clojars.tianwei/aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://clojars.org/net.clojars.tianwei/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "pom_url",
+        "scm_url",
+        "clojars_page",
+        "repo_pom"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "clojars_page_and_repo_pom",
+        "result": "Clojars page and repo POM HTTP 200; POM contains homepage and SCM links",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "temporary Maven settings deleted"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "docker_hub",
+      "status": "verified",
+      "artifact_type": "oci_image",
+      "automation_level": "automated",
+      "package": "baiwei111/aiagentskills-site-kit",
+      "version": "0.1.0/latest",
+      "public_url": "https://hub.docker.com/r/baiwei111/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "oci_labels",
+        "registry_manifest"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "docker_registry_manifest",
+        "result": "Docker Registry manifest verified for 0.1.0 with digest sha256:8ba9ec28b8801387555bb2c7d46f9e1a977d1bca84cc3a8b4658d1827697820f",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Docker Hub web page curl failed locally, but Registry API pull verification succeeded."
+      ]
+    },
+    {
+      "platform": "jsr",
+      "status": "blocked_namespace",
+      "artifact_type": "typescript_package",
+      "automation_level": "automated",
+      "package": "@bbwdadfg/aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://jsr.io/@bbwdadfg/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "JSR requires package creation/approval at https://jsr.io/new?scope=bbwdadfg&package=aiagentskills-site-kit&from=cli",
+      "verification": {
+        "method": "jsr_dry_run",
+        "result": "JSR dry-run passed; live publish requires creating/approving the new package URL in JSR UI",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Do not retry token publish until package is created in JSR UI."
+      ]
+    },
+    {
+      "platform": "maven_central_javadoc",
+      "status": "blocked_namespace",
+      "artifact_type": "java_library",
+      "automation_level": "automated",
+      "package": "io.github.bbwdadfg:aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://central.sonatype.com/artifact/io.github.bbwdadfg/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "keychain_credentials_present",
+      "blocked_reason": "Maven Central artifact not generated/signed in this run",
+      "verification": {
+        "method": "not_attempted",
+        "result": "Central publish needs a separate signed io.github.bbwdadfg artifact and central-publishing config; current Maven artifact was used for Clojars only",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": []
+    },
+    {
+      "platform": "nuget",
+      "status": "verified",
+      "artifact_type": "dotnet_package",
+      "automation_level": "automated",
+      "package": "AiAgentSkillsSiteKit",
+      "version": "0.1.0",
+      "public_url": "https://www.nuget.org/packages/AiAgentSkillsSiteKit/0.1.0",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "projectUrl",
+        "repository",
+        "README.md",
+        "package_page"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "nuget_registration_api",
+        "result": "NuGet flat container and registration API returned version 0.1.0 with projectUrl",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "NUGET_KEY env cleared"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "cocoapods",
+      "status": "blocked_review",
+      "artifact_type": "ios_macos_pod",
+      "automation_level": "automated",
+      "package": "AiAgentSkillsSiteKit",
+      "version": "0.1.0",
+      "public_url": "https://cocoapods.org/pods/AiAgentSkillsSiteKit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "Install full Xcode and set xcode-select before pod trunk push",
+      "verification": {
+        "method": "pod_lint",
+        "result": "pod spec lint --quick passed; trunk push full validation failed because xcrun simctl is unavailable without full Xcode",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Source tag cocoapods-v0.1.0 is pushed and ready."
+      ]
+    },
+    {
+      "platform": "luarocks",
+      "status": "verified",
+      "artifact_type": "lua_module",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0-1",
+      "public_url": "https://luarocks.org/modules/bbwdadfg/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "rockspec_homepage",
+        "source_url",
+        "module_page"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "luarocks_upload",
+        "result": "LuaRocks upload succeeded and public module page HTTP 200",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "LUAROCKS_API_KEY env cleared"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "cpan_metacpan",
+      "status": "blocked_credentials",
+      "artifact_type": "perl_distribution",
+      "automation_level": "automated",
+      "package": "AI-Agent-Skills-SiteKit",
+      "version": "0.1.0",
+      "public_url": "https://metacpan.org/dist/AI-Agent-Skills-SiteKit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "keychain_token_invalid_or_expired",
+      "blocked_reason": "Update publish-package-backlinks/cpan-user and cpan-token",
+      "verification": {
+        "method": "cpan_upload",
+        "result": "Perl make test and make dist passed; PAUSE upload returned 401 Unauthorized",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": []
+    },
+    {
+      "platform": "hackage",
+      "status": "blocked_credentials",
+      "artifact_type": "haskell_package",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://hackage.haskell.org/package/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "missing_keychain_token",
+      "blocked_reason": "publish-package-backlinks/hackage-token missing",
+      "verification": {
+        "method": "credential_check",
+        "result": "Hackage token missing; no Cabal package generated",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [],
+      "notes": []
+    },
+    {
+      "platform": "chocolatey",
+      "status": "submitted",
+      "artifact_type": "windows_package",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://community.chocolatey.org/packages/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "projectUrl",
+        "package_page"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "nuget_push_and_page",
+        "result": "Chocolatey push returned Created; community page HTTP 200, review/scan may still be pending",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "CHOCOKEY env cleared"
+      ],
+      "notes": []
+    },
+    {
+      "platform": "github_packages",
+      "status": "published",
+      "artifact_type": "github_package",
+      "automation_level": "automated",
+      "package": "@bbwdadfg/aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://github.com/users/bbwdadfg/packages/npm/package/aiagentskills-site-kit",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "Make package public in GitHub Packages UI or use a token/API path with package visibility permission",
+      "verification": {
+        "method": "github_packages_api",
+        "result": "GitHub Packages API lists package 0.1.0 but visibility remains private; public page returns 404",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "temporary npmrc deleted"
+      ],
+      "notes": [
+        "NPM publish to GitHub Packages succeeded."
+      ]
+    },
+    {
+      "platform": "gitlab_packages",
+      "status": "verified",
+      "artifact_type": "gitlab_package",
+      "automation_level": "automated",
+      "package": "aiagentskills-site-kit",
+      "version": "0.1.0",
+      "public_url": "https://gitlab.com/baiwei.chu/aiagentskills-site-kit/-/packages",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "public_project",
+        "package_page",
+        "artifact_download"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "gitlab_api_and_sha256",
+        "result": "GitLab Generic Package Registry lists package; anonymous download SHA256 matched local archive",
+        "checked_at": "2026-06-29T09:22:38Z"
+      },
+      "cleanup": [
+        "temporary archive deleted"
+      ],
+      "notes": []
+    }
+  ],
+  "follow_up": [
+    {
+      "platform": "jsr",
+      "reason": "create/approve @bbwdadfg/aiagentskills-site-kit in JSR UI, then rerun token publish",
+      "owner": "user/agent"
+    },
+    {
+      "platform": "github_packages",
+      "reason": "package published but private; make public in GitHub UI",
+      "owner": "user/agent"
+    },
+    {
+      "platform": "cpan_metacpan",
+      "reason": "replace PAUSE credentials after 401",
+      "owner": "user"
+    },
+    {
+      "platform": "cocoapods",
+      "reason": "install full Xcode or publish via GitHub Actions with COCOAPODS_TRUNK_TOKEN",
+      "owner": "user/agent"
+    },
+    {
+      "platform": "crates_io_docs_rs",
+      "reason": "add crates token to Keychain then publish",
+      "owner": "user"
+    },
+    {
+      "platform": "rubygems",
+      "reason": "add RubyGems API key to Keychain then publish",
+      "owner": "user"
+    },
+    {
+      "platform": "maven_central_javadoc",
+      "reason": "generate signed Central artifact under verified namespace io.github.bbwdadfg",
+      "owner": "agent"
+    }
+  ]
+}
