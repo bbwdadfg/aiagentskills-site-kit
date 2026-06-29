@@ -16,7 +16,7 @@
       "https://aiagentskills.net/category/code-generation/"
     ],
     "run_started_at": "2026-06-29T09:00:00Z",
-    "run_finished_at": "2026-06-29T09:22:38Z"
+    "run_finished_at": "2026-06-29T12:12:40Z"
   },
   "platforms": [
     {
@@ -315,23 +315,32 @@
     },
     {
       "platform": "maven_central_javadoc",
-      "status": "blocked_namespace",
+      "status": "published",
       "artifact_type": "java_library",
-      "automation_level": "automated",
+      "automation_level": "semi_auto_signed",
       "package": "io.github.bbwdadfg:aiagentskills-site-kit",
       "version": "0.1.0",
-      "public_url": "https://central.sonatype.com/artifact/io.github.bbwdadfg/aiagentskills-site-kit",
+      "public_url": "https://central.sonatype.com/artifact/io.github.bbwdadfg/aiagentskills-site-kit/0.1.0",
       "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
-      "link_surfaces_verified": [],
-      "credential_status": "keychain_credentials_present",
-      "blocked_reason": "Maven Central artifact not generated/signed in this run",
+      "link_surfaces_verified": [
+        "package_page",
+        "javadoc_page"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "",
       "verification": {
-        "method": "not_attempted",
-        "result": "Central publish needs a separate signed io.github.bbwdadfg artifact and central-publishing config; current Maven artifact was used for Clojars only",
-        "checked_at": "2026-06-29T09:22:38Z"
+        "method": "central_publish_api_and_page",
+        "result": "Central deployment 3d13a48d-8a6c-4458-ae95-e4740035e412 validated and publish API returned HTTP 204; Central artifact page returned HTTP 200; repo1.maven.org artifacts still indexing",
+        "checked_at": "2026-06-29T12:12:40Z"
       },
-      "cleanup": [],
-      "notes": []
+      "cleanup": [
+        "temporary Maven settings deleted",
+        "temporary credential variables cleared"
+      ],
+      "notes": [
+        "deploymentId 3d13a48d-8a6c-4458-ae95-e4740035e412",
+        "maven-v0.1.0 tag pushed"
+      ]
     },
     {
       "platform": "nuget",
@@ -537,7 +546,7 @@
     },
     {
       "platform": "maven_central_javadoc",
-      "reason": "generate signed Central artifact under verified namespace io.github.bbwdadfg",
+      "reason": "repo1.maven.org artifacts are still indexing; recheck POM/JAR/sources/javadoc/asc URLs and then mark verified",
       "owner": "agent"
     }
   ]

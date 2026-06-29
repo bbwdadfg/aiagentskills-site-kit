@@ -3,16 +3,16 @@
 - Site: <https://aiagentskills.net>
 - Source repo: <https://github.com/bbwdadfg/aiagentskills-site-kit>
 - Started: 2026-06-29T09:00:00Z
-- Finished: 2026-06-29T09:22:38Z
+- Finished: 2026-06-29T12:12:40Z
 
 ## Summary
 
 | Status | Count |
 | --- | ---: |
 | blocked_credentials | 3 |
-| blocked_namespace | 2 |
+| blocked_namespace | 1 |
 | blocked_review | 1 |
-| published | 2 |
+| published | 3 |
 | submitted | 1 |
 | verified | 11 |
 
@@ -29,6 +29,7 @@
 | hex_hexdocs | `aiagentskills_site_kit` | `0.1.0` | <https://hex.pm/packages/aiagentskills_site_kit> | Hex API returned 0.1.0 and HexDocs page HTTP 200 |
 | clojars | `net.clojars.tianwei/aiagentskills-site-kit` | `0.1.0` | <https://clojars.org/net.clojars.tianwei/aiagentskills-site-kit> | Clojars page and repo POM HTTP 200; POM contains homepage and SCM links |
 | docker_hub | `baiwei111/aiagentskills-site-kit` | `0.1.0/latest` | <https://hub.docker.com/r/baiwei111/aiagentskills-site-kit> | Docker Registry manifest verified for 0.1.0 with digest sha256:8ba9ec28b8801387555bb2c7d46f9e1a977d1bca84cc3a8b4658d1827697820f |
+| maven_central_javadoc | `io.github.bbwdadfg:aiagentskills-site-kit` | `0.1.0` | <https://central.sonatype.com/artifact/io.github.bbwdadfg/aiagentskills-site-kit/0.1.0> | Central deployment 3d13a48d-8a6c-4458-ae95-e4740035e412 validated and publish API returned HTTP 204; Central artifact page returned HTTP 200; repo1.maven.org artifacts still indexing |
 | nuget | `AiAgentSkillsSiteKit` | `0.1.0` | <https://www.nuget.org/packages/AiAgentSkillsSiteKit/0.1.0> | NuGet flat container and registration API returned version 0.1.0 with projectUrl |
 | luarocks | `aiagentskills-site-kit` | `0.1.0-1` | <https://luarocks.org/modules/bbwdadfg/aiagentskills-site-kit> | LuaRocks upload succeeded and public module page HTTP 200 |
 | chocolatey | `aiagentskills-site-kit` | `0.1.0` | <https://community.chocolatey.org/packages/aiagentskills-site-kit> | Chocolatey push returned Created; community page HTTP 200, review/scan may still be pending |
@@ -42,7 +43,6 @@
 | crates_io_docs_rs | `blocked_credentials` | publish-package-backlinks/crates-token missing |
 | rubygems | `blocked_credentials` | publish-package-backlinks/rubygems-api-key missing |
 | jsr | `blocked_namespace` | JSR requires package creation/approval at https://jsr.io/new?scope=bbwdadfg&package=aiagentskills-site-kit&from=cli |
-| maven_central_javadoc | `blocked_namespace` | Maven Central artifact not generated/signed in this run |
 | cocoapods | `blocked_review` | Install full Xcode and set xcode-select before pod trunk push |
 | cpan_metacpan | `blocked_credentials` | Update publish-package-backlinks/cpan-user and cpan-token |
 
@@ -53,6 +53,7 @@
 - pypi: uv token environment cleared
 - hex_hexdocs: HEX_API_KEY env cleared
 - clojars: temporary Maven settings deleted
+- maven_central_javadoc: temporary Maven settings deleted; temporary credential variables cleared
 - nuget: NUGET_KEY env cleared
 - luarocks: LUAROCKS_API_KEY env cleared
 - chocolatey: CHOCOKEY env cleared
@@ -67,4 +68,4 @@
 - cocoapods: install full Xcode or publish via GitHub Actions with COCOAPODS_TRUNK_TOKEN (user/agent)
 - crates_io_docs_rs: add crates token to Keychain then publish (user)
 - rubygems: add RubyGems API key to Keychain then publish (user)
-- maven_central_javadoc: generate signed Central artifact under verified namespace io.github.bbwdadfg (agent)
+- maven_central_javadoc: repo1.maven.org artifacts are still indexing; recheck POM/JAR/sources/javadoc/asc URLs and then mark verified (agent)
