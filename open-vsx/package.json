@@ -1,0 +1,36 @@
+{
+  "name": "ai-agent-skills",
+  "displayName": "AI Agent Skills",
+  "description": "Open AI Agent Skills, Claude skills, and Codex skill directory pages from VS Code-compatible editors.",
+  "version": "0.1.0",
+  "publisher": "bbwdadfg",
+  "license": "MIT",
+  "homepage": "https://aiagentskills.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbwdadfg/aiagentskills-site-kit"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "files": ["README.md", "LICENSE", "src/extension.js"],
+  "activationEvents": ["onCommand:aiAgentSkills.openDirectory"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiAgentSkills.openDirectory",
+        "title": "AI Agent Skills: Open Directory"
+      },
+      {
+        "command": "aiAgentSkills.openSubmit",
+        "title": "AI Agent Skills: Open Submit Page"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node -e \"const fs=require('fs'); const p=JSON.parse(fs.readFileSync('package.json','utf8')); if(p.displayName!=='AI Agent Skills') throw new Error('displayName'); if(!fs.readFileSync('src/extension.js','utf8').includes('https://aiagentskills.net/skills/')) throw new Error('links'); console.log('ok')\""
+  },
+  "devDependencies": {}
+}

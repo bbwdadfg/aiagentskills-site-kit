@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "ai-agent-skills.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "ai-agent-skills.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "ai-agent-skills.name" . }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "ai-agent-skills.name" . }}
+    spec:
+      containers:
+        - name: ai-agent-skills
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: AI_AGENT_SKILLS_HOME
+              value: {{ .Values.site.homepage | quote }}
+            - name: AI_AGENT_SKILLS_DIRECTORY
+              value: {{ .Values.site.skillsUrl | quote }}
+          ports:
+            - name: http
+              containerPort: 8080
+

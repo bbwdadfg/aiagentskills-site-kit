@@ -1,0 +1,15 @@
+apiVersion: v2
+name: ai-agent-skills
+description: Deploy the AI Agent Skills metadata helper service.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+home: https://aiagentskills.net
+sources:
+  - https://github.com/bbwdadfg/aiagentskills-site-kit
+keywords:
+  - ai-agent-skills
+  - aiagentskills
+  - codex
+  - claude
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=AI Agent Skills
+Comment=Open the AI Agent Skills PWA
+Exec=ai-agent-skills
+Categories=Development;Utility;
+Terminal=false
+

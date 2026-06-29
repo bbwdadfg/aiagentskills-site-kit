@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>net.aiagentskills.AIAgentSkills</id>
+  <name>AI Agent Skills</name>
+  <summary>Open the AI Agent Skills PWA</summary>
+  <description>
+    <p>AI Agent Skills is a directory for discovering Claude skills, Codex skills, and practical AI agent workflows.</p>
+  </description>
+  <url type="homepage">https://aiagentskills.net</url>
+  <url type="vcs-browser">https://github.com/bbwdadfg/aiagentskills-site-kit</url>
+  <launchable type="desktop-id">net.aiagentskills.AIAgentSkills.desktop</launchable>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+</component>
+

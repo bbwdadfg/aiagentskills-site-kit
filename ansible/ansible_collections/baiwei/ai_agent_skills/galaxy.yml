@@ -1,0 +1,18 @@
+namespace: baiwei
+name: ai_agent_skills
+version: 0.1.0
+readme: README.md
+authors:
+  - AI Agent Skills
+description: Ansible helpers for AI Agent Skills links and metadata.
+license:
+  - MIT
+tags:
+  - ai
+  - agents
+  - skills
+  - codex
+  - claude
+repository: https://github.com/bbwdadfg/aiagentskills-site-kit
+homepage: https://aiagentskills.net
+

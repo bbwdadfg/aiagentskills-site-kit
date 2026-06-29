@@ -1,0 +1,13 @@
+Package: aiAgentSkills
+Type: Package
+Title: URL Helpers for AI Agent Skills
+Version: 0.1.0
+Authors@R: person("AI Agent Skills", role = c("aut", "cre"), email = "hello@aiagentskills.net")
+Author: AI Agent Skills [aut, cre]
+Maintainer: AI Agent Skills <hello@aiagentskills.net>
+Description: Small URL helpers for AI Agent Skills, a curated directory for Claude skills, Codex skills, and AI agent workflows.
+License: MIT + file LICENSE
+URL: https://aiagentskills.net, https://github.com/bbwdadfg/aiagentskills-site-kit
+BugReports: https://github.com/bbwdadfg/aiagentskills-site-kit/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2

@@ -1,0 +1,18 @@
+# Maintainer: AI Agent Skills <hello@aiagentskills.net>
+pkgname=ai-agent-skills
+pkgver=0.1.1
+pkgrel=1
+pkgdesc="Command-line links for AI Agent Skills"
+arch=('any')
+url="https://aiagentskills.net"
+license=('MIT')
+depends=('nodejs')
+source=("https://github.com/bbwdadfg/aiagentskills-site-kit/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('96866a9560295afbeb69a46427b1c1620f179c747add45d44b10d0dd771797bc')
+
+package() {
+  cd "aiagentskills-site-kit-${pkgver}"
+  install -Dm755 bin/aiagentskills-site-kit "$pkgdir/usr/bin/ai-agent-skills"
+  install -Dm644 README.md "$pkgdir/usr/share/doc/${pkgname}/README.md"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/${pkgname}/LICENSE"
+}

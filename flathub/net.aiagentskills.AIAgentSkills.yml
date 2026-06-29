@@ -1,0 +1,24 @@
+app-id: net.aiagentskills.AIAgentSkills
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
+command: ai-agent-skills
+finish-args:
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+modules:
+  - name: ai-agent-skills
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 ai-agent-skills.sh /app/bin/ai-agent-skills
+      - install -Dm644 net.aiagentskills.AIAgentSkills.metainfo.xml /app/share/metainfo/net.aiagentskills.AIAgentSkills.metainfo.xml
+      - install -Dm644 net.aiagentskills.AIAgentSkills.desktop /app/share/applications/net.aiagentskills.AIAgentSkills.desktop
+    sources:
+      - type: file
+        path: ai-agent-skills.sh
+      - type: file
+        path: net.aiagentskills.AIAgentSkills.metainfo.xml
+      - type: file
+        path: net.aiagentskills.AIAgentSkills.desktop
+

@@ -1,0 +1,25 @@
+replicaCount: 1
+
+image:
+  repository: baiwei111/aiagentskills-site-kit
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  className: ""
+  hosts:
+    - host: ai-agent-skills.local
+      paths:
+        - path: /
+          pathType: Prefix
+
+site:
+  name: AI Agent Skills
+  homepage: https://aiagentskills.net
+  skillsUrl: https://aiagentskills.net/skills/
+

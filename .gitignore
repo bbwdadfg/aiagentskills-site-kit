@@ -29,6 +29,8 @@ Makefile
 pm_to_blib
 AI Agent Skills-Player-SiteKit-*/
 node_modules/
+.terraform/
+*.Rcheck/
 .dart_tool/
 pubspec.lock
 target/

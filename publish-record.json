@@ -16,7 +16,7 @@
       "https://aiagentskills.net/category/code-generation/"
     ],
     "run_started_at": "2026-06-29T09:00:00Z",
-    "run_finished_at": "2026-06-29T12:52:30Z"
+    "run_finished_at": "2026-06-29T13:22:10Z"
   },
   "platforms": [
     {
@@ -555,7 +555,317 @@
         "temporary archive deleted"
       ],
       "notes": []
+    },
+    {
+      "platform": "terraform_registry",
+      "status": "blocked_oauth",
+      "artifact_type": "terraform_module",
+      "automation_level": "semi_auto",
+      "package": "terraform-cloudflare-ai-agent-skills",
+      "version": "v0.1.0",
+      "public_url": "https://github.com/bbwdadfg/terraform-cloudflare-ai-agent-skills",
+      "repository_url": "https://github.com/bbwdadfg/terraform-cloudflare-ai-agent-skills",
+      "link_surfaces_verified": [
+        "README.md",
+        "source_repo",
+        "semver_tag"
+      ],
+      "credential_status": "github_token_used",
+      "blocked_reason": "Terraform Registry still requires web UI GitHub OAuth/import for the public module repository.",
+      "verification": {
+        "method": "github_repo_tag_and_terraform_validate",
+        "result": "Public repo and v0.1.0 tag returned HTTP 200; fresh clone terraform init/validate passed.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [
+        "removed local .terraform provider cache before commit"
+      ],
+      "notes": [
+        "Display name: AI Agent Skills; registry-safe module name: terraform-cloudflare-ai-agent-skills."
+      ]
+    },
+    {
+      "platform": "helm_artifact_hub",
+      "status": "published",
+      "artifact_type": "helm_chart",
+      "automation_level": "automated_then_manual_index",
+      "package": "ai-agent-skills",
+      "version": "0.1.0",
+      "public_url": "https://github.com/bbwdadfg/ai-agent-skills-helm-charts",
+      "repository_url": "https://github.com/bbwdadfg/ai-agent-skills-helm-charts",
+      "link_surfaces_verified": [
+        "Chart.yaml_home",
+        "sources",
+        "helm_index",
+        "helm_template"
+      ],
+      "credential_status": "github_token_used",
+      "blocked_reason": "Artifact Hub listing still requires repository add/ownership processing in Artifact Hub UI.",
+      "verification": {
+        "method": "helm_repo_add_search_template",
+        "result": "Raw GitHub Helm repo added successfully; chart search and template output included aiagentskills.net links.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Helm repo URL: https://raw.githubusercontent.com/bbwdadfg/ai-agent-skills-helm-charts/main"
+      ]
+    },
+    {
+      "platform": "ansible_galaxy",
+      "status": "blocked_namespace",
+      "artifact_type": "ansible_collection",
+      "automation_level": "automated_with_token",
+      "package": "baiwei.ai_agent_skills",
+      "version": "0.1.0",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "galaxy_yml_homepage",
+        "README.md",
+        "collection_artifact_built"
+      ],
+      "credential_status": "keychain_token_used",
+      "blocked_reason": "Ansible Galaxy returned Namespace in filename not found for namespace baiwei.",
+      "verification": {
+        "method": "ansible_galaxy_build_and_publish_attempt",
+        "result": "Collection build succeeded; publish failed with HTTP 404 namespace not found.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [
+        "temporary token variable cleared"
+      ],
+      "notes": [
+        "Create or claim namespace baiwei in Galaxy, or provide an owned namespace, then rebuild/publish."
+      ]
+    },
+    {
+      "platform": "open_vsx",
+      "status": "blocked_credentials",
+      "artifact_type": "vscode_compatible_extension",
+      "automation_level": "semi_auto_review",
+      "package": "ai-agent-skills",
+      "version": "0.1.0",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "package_json_homepage",
+        "repository",
+        "README.md",
+        "vsix_packaged"
+      ],
+      "credential_status": "missing_openvsx_token",
+      "blocked_reason": "Open VSX token is missing; Eclipse/Open VSX publisher setup may still be required.",
+      "verification": {
+        "method": "vsce_package",
+        "result": "VSIX packaged successfully at /tmp/ai-agent-skills-0.1.0.vsix with AI Agent Skills links.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Keychain service publish-package-backlinks/openvsx-token was missing."
+      ]
+    },
+    {
+      "platform": "wordpress_plugin_directory",
+      "status": "blocked_oauth",
+      "artifact_type": "wordpress_plugin",
+      "automation_level": "manual_review",
+      "package": "ai-agent-skills",
+      "version": "0.1.0",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "plugin_headers",
+        "readme_txt",
+        "plugin_zip"
+      ],
+      "credential_status": "chrome_extension_unavailable",
+      "blocked_reason": "WordPress.org plugin submission requires logged-in browser/manual review, and the Chrome extension backend was unavailable.",
+      "verification": {
+        "method": "plugin_zip_static_check",
+        "result": "Plugin zip built at /tmp/ai-agent-skills-wordpress.zip with plugin root ai-agent-skills/.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Chrome extension returned Browser is not available: extension, so no login-dependent submission was attempted."
+      ]
+    },
+    {
+      "platform": "aur",
+      "status": "blocked_credentials",
+      "artifact_type": "arch_package",
+      "automation_level": "manual_git_ssh",
+      "package": "ai-agent-skills",
+      "version": "0.1.1",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "PKGBUILD_url",
+        "source",
+        ".SRCINFO"
+      ],
+      "credential_status": "missing_aur_ssh_key",
+      "blocked_reason": "AUR SSH returned Permission denied (publickey).",
+      "verification": {
+        "method": "ssh_batch_mode",
+        "result": "AUR SSH access denied; PKGBUILD and .SRCINFO prepared with source sha256.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Add local SSH public key to AUR account before pushing."
+      ]
+    },
+    {
+      "platform": "conda_forge",
+      "status": "blocked_review",
+      "artifact_type": "conda_recipe",
+      "automation_level": "pr_review",
+      "package": "ai-agent-skills",
+      "version": "0.1.0",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "recipe_home",
+        "source",
+        "sha256"
+      ],
+      "credential_status": "none",
+      "blocked_reason": "Conda-forge publication requires staged-recipes PR and maintainer review; local rattler-build does not parse conda-forge jinja meta.yaml.",
+      "verification": {
+        "method": "recipe_static_check",
+        "result": "Recipe meta.yaml prepared with PyPI source SHA256 and aiagentskills.net links.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "A PR can be opened after confirming conda-forge maintainers will accept the package naming."
+      ]
+    },
+    {
+      "platform": "cran",
+      "status": "blocked_review",
+      "artifact_type": "r_package",
+      "automation_level": "manual_review",
+      "package": "aiAgentSkills",
+      "version": "0.1.0",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "DESCRIPTION_URL",
+        "BugReports",
+        "R_CMD_check"
+      ],
+      "credential_status": "none",
+      "blocked_reason": "CRAN submission requires manual upload, maintainer email confirmation, and CRAN review.",
+      "verification": {
+        "method": "R_CMD_build_check",
+        "result": "R CMD build and R CMD check --no-manual --no-build-vignettes completed with Status: OK.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [
+        "removed local Rcheck and source tarball after verification"
+      ],
+      "notes": [
+        "Display name: AI Agent Skills; CRAN-safe package name: aiAgentSkills."
+      ]
+    },
+    {
+      "platform": "flathub",
+      "status": "blocked_credentials",
+      "artifact_type": "desktop_app",
+      "automation_level": "pr_review",
+      "package": "net.aiagentskills.AIAgentSkills",
+      "version": "0.1.0",
+      "public_url": "",
+      "repository_url": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+      "link_surfaces_verified": [
+        "flatpak_manifest",
+        "appstream_homepage",
+        "desktop_file"
+      ],
+      "credential_status": "missing_flatpak_tools_and_review",
+      "blocked_reason": "flatpak-builder/flatpak are not installed locally and Flathub requires PR review for a real desktop app.",
+      "verification": {
+        "method": "static_file_check",
+        "result": "Flatpak manifest, metainfo, desktop file, and PWA opener script prepared with aiagentskills.net links.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Main site PWA manifest was added in my-shipany-two/src/app/manifest.ts but not deployed."
+      ]
+    },
+    {
+      "platform": "homebrew",
+      "status": "verified",
+      "artifact_type": "homebrew_tap_formula",
+      "automation_level": "automated",
+      "package": "ai-agent-skills",
+      "version": "0.1.1",
+      "public_url": "https://github.com/bbwdadfg/homebrew-ai-agent-skills",
+      "repository_url": "https://github.com/bbwdadfg/homebrew-ai-agent-skills",
+      "link_surfaces_verified": [
+        "homepage",
+        "url",
+        "tap_repo",
+        "formula_install_test"
+      ],
+      "credential_status": "github_token_used",
+      "blocked_reason": "",
+      "verification": {
+        "method": "brew_tap_install_test",
+        "result": "brew tap, install, CLI smoke tests, and brew test succeeded for bbwdadfg/ai-agent-skills/ai-agent-skills.",
+        "checked_at": "2026-06-29T13:22:10Z"
+      },
+      "cleanup": [],
+      "notes": [
+        "Tap syntax: brew tap bbwdadfg/ai-agent-skills; brew install ai-agent-skills."
+      ]
     }
   ],
-  "follow_up": []
+  "follow_up": [
+    {
+      "platform": "chocolatey",
+      "action": "Wait for community moderation/scan to approve submitted package."
+    },
+    {
+      "platform": "terraform_registry",
+      "action": "Sign in to Terraform Registry, connect GitHub, and import bbwdadfg/terraform-cloudflare-ai-agent-skills tag v0.1.0."
+    },
+    {
+      "platform": "helm_artifact_hub",
+      "action": "Add Helm repo in Artifact Hub if an Artifact Hub listing is desired: https://raw.githubusercontent.com/bbwdadfg/ai-agent-skills-helm-charts/main."
+    },
+    {
+      "platform": "ansible_galaxy",
+      "action": "Create or claim Ansible Galaxy namespace baiwei, or provide an owned namespace."
+    },
+    {
+      "platform": "open_vsx",
+      "action": "Create/sign in to Eclipse Open VSX, complete publisher setup, create token, store in Keychain service publish-package-backlinks/openvsx-token."
+    },
+    {
+      "platform": "wordpress_plugin_directory",
+      "action": "Use logged-in WordPress.org browser session to submit /tmp/ai-agent-skills-wordpress.zip."
+    },
+    {
+      "platform": "aur",
+      "action": "Add local SSH public key to AUR account so aur@aur.archlinux.org accepts git pushes."
+    },
+    {
+      "platform": "conda_forge",
+      "action": "Decide whether to open a conda-forge staged-recipes PR for this helper package."
+    },
+    {
+      "platform": "cran",
+      "action": "If desired, manually submit aiAgentSkills to CRAN and confirm maintainer email."
+    },
+    {
+      "platform": "flathub",
+      "action": "Install Flatpak tooling and decide whether the PWA wrapper is sufficient for Flathub PR review."
+    }
+  ]
 }
