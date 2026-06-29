@@ -1,0 +1,13 @@
+{
+  "name": "@bbwdadfg/aiagentskills-site-kit",
+  "version": "0.1.0",
+  "description": "Small metadata and URL helpers for AI Agent Skills.",
+  "homepage": "https://aiagentskills.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbwdadfg/aiagentskills-site-kit.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": { "test": "node test.js" }
+}

@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+const links = require("../index.js");
+const [command, value] = process.argv.slice(2);
+
+switch (command) {
+  case undefined:
+  case "home":
+    console.log(links.homeUrl());
+    break;
+  case "skills":
+    console.log(links.skillsUrl());
+    break;
+  case "search":
+    console.log(links.searchUrl(value || ""));
+    break;
+  case "submit":
+    console.log(links.submitUrl());
+    break;
+  case "blog":
+    console.log(links.blogUrl());
+    break;
+  case "category":
+    console.log(links.categoryUrl(value || "agent-workflows"));
+    break;
+  case "skill":
+    console.log(links.skillUrl(value || "seo-article-writer"));
+    break;
+  default:
+    console.error("usage: aiagentskills-site-kit [home|skills|search <query>|submit|blog|category <slug>|skill <slug>]");
+    process.exit(1);
+}

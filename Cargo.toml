@@ -1,0 +1,15 @@
+[package]
+name = "aiagentskills-site-kit"
+version = "0.1.0"
+edition = "2021"
+description = "Small metadata and URL helpers for AI Agent Skills, a curated Claude, Codex, and AI agent skills directory."
+license = "MIT"
+homepage = "https://aiagentskills.net"
+repository = "https://github.com/bbwdadfg/aiagentskills-site-kit"
+documentation = "https://docs.rs/aiagentskills-site-kit"
+readme = "README.md"
+keywords = ["skills", "agents", "claude", "codex"]
+
+[lib]
+name = "aiagentskills_site_kit"
+path = "rust/src/lib.rs"

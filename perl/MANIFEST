@@ -1,0 +1,6 @@
+Makefile.PL
+README.md
+LICENSE
+lib/AI/Agent/Skills/SiteKit.pm
+t/sitekit.t
+MANIFEST

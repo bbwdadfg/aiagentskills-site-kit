@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.clojars.tianwei</groupId>
+  <artifactId>aiagentskills-site-kit</artifactId>
+  <version>0.1.0</version>
+  <packaging>jar</packaging>
+  <name>aiagentskills-site-kit</name>
+  <description>Small metadata and URL helpers for AI Agent Skills.</description>
+  <url>https://aiagentskills.net</url>
+  <licenses><license><name>MIT</name><url>https://opensource.org/license/mit/</url></license></licenses>
+  <developers><developer><name>AI Agent Skills</name><email>hello@aiagentskills.net</email><url>https://aiagentskills.net</url></developer></developers>
+  <scm><url>https://github.com/bbwdadfg/aiagentskills-site-kit</url><connection>scm:git:https://github.com/bbwdadfg/aiagentskills-site-kit.git</connection><developerConnection>scm:git:https://github.com/bbwdadfg/aiagentskills-site-kit.git</developerConnection><tag>v0.1.0</tag></scm>
+  <properties><maven.compiler.source>11</maven.compiler.source><maven.compiler.target>11</maven.compiler.target><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+  <dependencies><dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.10.2</version><scope>test</scope></dependency></dependencies>
+  <build><plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.2.5</version></plugin></plugins></build>
+</project>

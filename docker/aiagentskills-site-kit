@@ -1,0 +1,20 @@
+#!/bin/sh
+base_url="https://aiagentskills.net"
+case "$1" in
+  ""|home) printf '%s
+' "$base_url" ;;
+  skills) printf '%s/skills/
+' "$base_url" ;;
+  submit) printf '%s/submit/
+' "$base_url" ;;
+  blog) printf '%s/blog/
+' "$base_url" ;;
+  category) printf '%s/category/%s/
+' "$base_url" "${2:-agent-workflows}" ;;
+  skill) printf '%s/skill/%s/
+' "$base_url" "${2:-seo-article-writer}" ;;
+  search) q=$(printf '%s' "${2:-}" | sed 's/ /%20/g'); printf '%s/skills/?q=%s
+' "$base_url" "$q" ;;
+  *) printf 'usage: aiagentskills-site-kit [home|skills|search <query>|submit|blog|category <slug>|skill <slug>]
+' >&2; exit 1 ;;
+esac

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>aiagentskills-site-kit</id>
+    <version>0.1.0</version>
+    <title>AI Agent Skills Site Kit</title>
+    <authors>AI Agent Skills</authors>
+    <projectUrl>https://aiagentskills.net</projectUrl>
+    <repository type="git" url="https://github.com/bbwdadfg/aiagentskills-site-kit" />
+    <license type="expression">MIT</license>
+    <readme>README.md</readme>
+    <description>Small PowerShell metadata helpers for AI Agent Skills.</description>
+    <summary>URL helpers for AI Agent Skills.</summary>
+    <tags>aiagentskills skills agents claude codex</tags>
+  </metadata>
+  <files>
+    <file src="tools\AiAgentSkillsSiteKit.psm1" target="tools" />
+    <file src="README.md" target="" />
+    <file src="LICENSE.txt" target="" />
+  </files>
+</package>

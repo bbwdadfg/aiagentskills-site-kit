@@ -1,0 +1,17 @@
+{
+  "name": "bbwdadfg/aiagentskills-site-kit",
+  "description": "Small metadata and URL helpers for AI Agent Skills at https://aiagentskills.net.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://aiagentskills.net",
+  "keywords": ["aiagentskills", "skills", "agents", "claude", "codex"],
+  "support": {
+    "source": "https://github.com/bbwdadfg/aiagentskills-site-kit",
+    "issues": "https://github.com/bbwdadfg/aiagentskills-site-kit/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "AiAgentSkills\SiteKit\": "src/"
+    }
+  }
+}

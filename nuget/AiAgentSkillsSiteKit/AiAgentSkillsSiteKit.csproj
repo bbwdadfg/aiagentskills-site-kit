@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>AiAgentSkillsSiteKit</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>AI Agent Skills</Authors>
+    <Company>AI Agent Skills</Company>
+    <Description>Small metadata and URL helpers for AI Agent Skills.</Description>
+    <PackageTags>aiagentskills;skills;agents;claude;codex</PackageTags>
+    <PackageProjectUrl>https://aiagentskills.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bbwdadfg/aiagentskills-site-kit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup><None Include="../../README.md" Pack="true" PackagePath="" /></ItemGroup>
+</Project>

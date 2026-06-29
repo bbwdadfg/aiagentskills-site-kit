@@ -1,0 +1,28 @@
+{
+  "name": "aiagentskills-site-kit",
+  "version": "0.1.0",
+  "description": "Small metadata and URL helpers for AI Agent Skills, a curated Claude, Codex, and AI agent skills directory.",
+  "homepage": "https://aiagentskills.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbwdadfg/aiagentskills-site-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bbwdadfg/aiagentskills-site-kit/issues"
+  },
+  "keywords": ["aiagentskills", "skills", "agents", "claude", "codex"],
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "aiagentskills-site-kit": "bin/aiagentskills-site-kit"
+  },
+  "files": [
+    "index.js",
+    "bin/aiagentskills-site-kit",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test_node.js"
+  }
+}
