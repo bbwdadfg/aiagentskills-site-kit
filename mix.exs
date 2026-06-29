@@ -8,12 +8,17 @@ defmodule AiAgentSkillsSiteKit.MixProject do
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       description: "Small metadata and URL helpers for AI Agent Skills.",
+      deps: deps(),
       package: package(),
       docs: [main: "AiAgentSkillsSiteKit", source_url: "https://github.com/bbwdadfg/aiagentskills-site-kit"]
     ]
   end
 
   def application, do: [extra_applications: [:logger]]
+
+  defp deps do
+    [{:ex_doc, ">= 0.0.0", only: :dev, runtime: false}]
+  end
 
   defp package do
     [
