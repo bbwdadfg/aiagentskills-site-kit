@@ -3,18 +3,18 @@
 - Site: <https://aiagentskills.net>
 - Source repo: <https://github.com/bbwdadfg/aiagentskills-site-kit>
 - Started: 2026-06-29T09:00:00Z
-- Finished: 2026-06-29T13:22:10Z
+- Finished: 2026-06-29T13:43:40Z
 
 ## Summary
 
 | Status | Count |
 | --- | ---: |
-| blocked_credentials | 3 |
+| blocked_credentials | 1 |
 | blocked_namespace | 1 |
-| blocked_oauth | 2 |
-| blocked_review | 2 |
+| blocked_oauth | 1 |
+| blocked_review | 1 |
 | published | 1 |
-| submitted | 1 |
+| submitted | 3 |
 | verified | 20 |
 
 ## Published Links
@@ -44,11 +44,9 @@
 | terraform_registry | `terraform-cloudflare-ai-agent-skills` | `v0.1.0` | blocked_oauth | <https://github.com/bbwdadfg/terraform-cloudflare-ai-agent-skills> | Public repo and v0.1.0 tag returned HTTP 200; fresh clone terraform init/validate passed. |
 | helm_artifact_hub | `ai-agent-skills` | `0.1.0` | published | <https://github.com/bbwdadfg/ai-agent-skills-helm-charts> | Raw GitHub Helm repo added successfully; chart search and template output included aiagentskills.net links. |
 | ansible_galaxy | `baiwei.ai_agent_skills` | `0.1.0` | blocked_namespace |  | Collection build succeeded; publish failed with HTTP 404 namespace not found. |
-| open_vsx | `ai-agent-skills` | `0.1.0` | blocked_credentials |  | VSIX packaged successfully at /tmp/ai-agent-skills-0.1.0.vsix with AI Agent Skills links. |
-| wordpress_plugin_directory | `ai-agent-skills` | `0.1.0` | blocked_oauth |  | Plugin zip built at /tmp/ai-agent-skills-wordpress.zip with plugin root ai-agent-skills/. |
-| aur | `ai-agent-skills` | `0.1.1` | blocked_credentials |  | AUR SSH access denied; PKGBUILD and .SRCINFO prepared with source sha256. |
-| conda_forge | `ai-agent-skills` | `0.1.0` | blocked_review |  | Recipe meta.yaml prepared with PyPI source SHA256 and aiagentskills.net links. |
-| cran | `aiAgentSkills` | `0.1.0` | blocked_review |  | R CMD build and R CMD check --no-manual --no-build-vignettes completed with Status: OK. |
+| open_vsx | `ai-agent-skills` | `0.1.0` | submitted | <https://open-vsx.org/extension/bbwdadfg/ai-agent-skills> | ovsx publish returned Published bbwdadfg.ai-agent-skills v0.1.0; public API still returned 404, so wait for indexing/review before marking verified. |
+| conda_forge | `ai-agent-skills` | `0.1.0` | submitted | <https://github.com/conda-forge/staged-recipes/pull/33994> | conda-forge staged-recipes PR #33994 opened for ai-agent-skills recipe. |
+| cran | `aiAgentSkills` | `0.1.0` | blocked_review |  | R CMD build and R CMD check completed with Status: OK; CRAN package page returned 404, but CRAN submit host failed TLS handshake from local curl so no upload was submitted. |
 | flathub | `net.aiagentskills.AIAgentSkills` | `0.1.0` | blocked_credentials |  | Flatpak manifest, metainfo, desktop file, and PWA opener script prepared with aiagentskills.net links. |
 | homebrew | `ai-agent-skills` | `0.1.1` | verified | <https://github.com/bbwdadfg/homebrew-ai-agent-skills> | brew tap, install, CLI smoke tests, and brew test succeeded for bbwdadfg/ai-agent-skills/ai-agent-skills. |
 
@@ -56,24 +54,17 @@
 
 | Platform | Status | Reason |
 | --- | --- | --- |
-| terraform_registry | blocked_oauth | Terraform Registry still requires web UI GitHub OAuth/import for the public module repository. |
+| terraform_registry | blocked_oauth | Chrome extension backend is unavailable, so the logged-in Terraform Registry web import cannot be operated from Codex. |
 | ansible_galaxy | blocked_namespace | Ansible Galaxy returned Namespace in filename not found for namespace baiwei. |
-| open_vsx | blocked_credentials | Open VSX token is missing; Eclipse/Open VSX publisher setup may still be required. |
-| wordpress_plugin_directory | blocked_oauth | WordPress.org plugin submission requires logged-in browser/manual review, and the Chrome extension backend was unavailable. |
-| aur | blocked_credentials | AUR SSH returned Permission denied (publickey). |
-| conda_forge | blocked_review | Conda-forge publication requires staged-recipes PR and maintainer review; local rattler-build does not parse conda-forge jinja meta.yaml. |
-| cran | blocked_review | CRAN submission requires manual upload, maintainer email confirmation, and CRAN review. |
-| flathub | blocked_credentials | flatpak-builder/flatpak are not installed locally and Flathub requires PR review for a real desktop app. |
+| cran | blocked_review | CRAN submit host failed TLS handshake locally; upload and maintainer email confirmation still required. |
+| flathub | blocked_credentials | flatpak-builder/flatpak are unavailable on this Mac and Flathub PR review requires a buildable real desktop app. |
 
 ## Follow-Up Queue
 
 - chocolatey: Wait for community moderation/scan to approve submitted package.
-- terraform_registry: Sign in to Terraform Registry, connect GitHub, and import bbwdadfg/terraform-cloudflare-ai-agent-skills tag v0.1.0.
-- helm_artifact_hub: Add Helm repo in Artifact Hub if an Artifact Hub listing is desired: https://raw.githubusercontent.com/bbwdadfg/ai-agent-skills-helm-charts/main.
-- ansible_galaxy: Create or claim Ansible Galaxy namespace baiwei, or provide an owned namespace.
-- open_vsx: Create/sign in to Eclipse Open VSX, complete publisher setup, create token, store in Keychain service publish-package-backlinks/openvsx-token.
-- wordpress_plugin_directory: Use logged-in WordPress.org browser session to submit /tmp/ai-agent-skills-wordpress.zip.
-- aur: Add local SSH public key to AUR account so aur@aur.archlinux.org accepts git pushes.
-- conda_forge: Decide whether to open a conda-forge staged-recipes PR for this helper package.
-- cran: If desired, manually submit aiAgentSkills to CRAN and confirm maintainer email.
-- flathub: Install Flatpak tooling and decide whether the PWA wrapper is sufficient for Flathub PR review.
+- terraform_registry: Chrome extension backend must be available, then import bbwdadfg/terraform-cloudflare-ai-agent-skills in Terraform Registry.
+- helm_artifact_hub: Chrome extension backend must be available, then add Helm repo https://raw.githubusercontent.com/bbwdadfg/ai-agent-skills-helm-charts/main in Artifact Hub.
+- ansible_galaxy: Create or claim Ansible Galaxy namespace baiwei, or provide an owned namespace; current token still gets Namespace in filename not found.
+- cran: Submit aiAgentSkills_0.1.0.tar.gz through CRAN once submit host/browser works, then confirm maintainer email.
+- flathub: Provide Linux/Flatpak build environment or a real desktop app acceptable for Flathub review.
+- open_vsx: Wait for Open VSX API/page to show bbwdadfg.ai-agent-skills, then mark verified.
